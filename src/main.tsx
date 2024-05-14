@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <NProgress />
     <Version />
     <Provider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <App />
       </Router>
     </Provider>
