@@ -1,8 +1,8 @@
 import * as React from 'react'
-import { App, ConfigProvider } from 'antd'
+import { App } from 'antd'
 import { ThemeProvider, createGlobalStyle } from 'antd-style'
 
-const Global = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   html, body {
     background-color: ${props => props.theme.colorBgContainer};
   }
@@ -11,12 +11,10 @@ const Global = createGlobalStyle`
 function Provider({ children }: React.PropsWithChildren) {
   return (
     <ThemeProvider themeMode="auto">
-      <ConfigProvider>
-        <Global />
-        <App>
-          {children}
-        </App>
-      </ConfigProvider>
+      <GlobalStyle />
+      <App>
+        {children}
+      </App>
     </ThemeProvider>
   )
 }

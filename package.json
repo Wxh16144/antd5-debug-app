@@ -12,11 +12,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/colors": "latest",
     "@ant-design/icons": "latest",
+    "ahooks": "^3",
     "antd": "^5",
     "antd-style": "latest",
     "dayjs": "latest",
     "lodash-es": "latest",
+    "normalize.css": "latest",
     "nprogress": "latest",
     "react": "^18",
     "react-dom": "^18",
@@ -42,7 +45,7 @@
     "vite-plugin-pages": "^0.32.1"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
