@@ -1,5 +1,5 @@
 import React, { version as reactVersion } from 'react'
-import { version as antdVersion } from 'antd'
+import { ConfigProvider, Typography, version as antdVersion, theme, version } from 'antd'
 
 function Version() {
   const isConsoleTable = React.useRef(false)
@@ -14,7 +14,11 @@ function Version() {
     isConsoleTable.current = true
   }, [])
 
-  return null
+  return (
+    <ConfigProvider theme={{ algorithm: theme.compactAlgorithm }}>
+      <Typography.Text code>{version}</Typography.Text>
+    </ConfigProvider>
+  )
 }
 
 export default Version

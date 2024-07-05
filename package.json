@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm",
+  "packageManager": "pnpm@8.15.8",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,15 +12,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.3.7",
-    "antd": "latest",
-    "antd-style": "^3.6.2",
-    "dayjs": "^1.11.11",
-    "lodash-es": "^4.17.21",
-    "nprogress": "^0.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.1"
+    "@ant-design/icons": "latest",
+    "antd": "^5",
+    "antd-style": "latest",
+    "dayjs": "latest",
+    "lodash-es": "latest",
+    "nprogress": "latest",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router-dom": "^6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.17.0",

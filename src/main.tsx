@@ -4,9 +4,9 @@ import 'antd/dist/reset.css'
 import { Skeleton } from 'antd'
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
 
-import Provider from './privader'
-import NProgress from './nprogress'
-import Version from './shared/version'
+import Provider from './Privader'
+import NProgress from './Nprogress'
+import Version from './shared/Version'
 import routes from '~react-pages'
 
 // eslint-disable-next-line react-refresh/only-export-components
